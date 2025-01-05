@@ -22,6 +22,7 @@ class HoverableWrapper extends StatefulWidget {
 class _HoverableWrapperState extends State<HoverableWrapper> {
   bool _isHovered = false;
 
+  /// Helper to determine scale dependin on distance from hovered item
   double _getDistanceScale() {
     if (widget.distance == 0) {
       return 1.2;
@@ -34,6 +35,7 @@ class _HoverableWrapperState extends State<HoverableWrapper> {
     }
   }
 
+  /// Handles on hover logic
   void _onHover() {
     if (!widget.isAnyDragged) {
       _isHovered = true;
@@ -43,6 +45,7 @@ class _HoverableWrapperState extends State<HoverableWrapper> {
     }
   }
 
+  /// Handles on hover end logic
   void _onHoverEnd() {
     if (!widget.isAnyDragged) {
       _isHovered = false;
