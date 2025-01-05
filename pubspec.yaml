@@ -1,5 +1,5 @@
 name: draggable_dock
-description: "A new Flutter project."
+description: "Completely animated dock with draggable buttons, similar to the dock in MacOS"
 publish_to: 'none'
 version: 0.1.0
 
@@ -9,6 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  animated_reorderable_list: ^1.1.5
 
 dev_dependencies:
   flutter_test:
