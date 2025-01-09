@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
               return Container(
                 height: size,
                 width: size,
-                margin: const EdgeInsets.all(10),
+                margin: const EdgeInsets.all(11),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(8),
                   color: Colors.primaries[e.hashCode % Colors.primaries.length],

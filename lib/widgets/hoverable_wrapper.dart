@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+/// [Widget] that scales it's child when hovered.
 class HoverableWrapper extends StatefulWidget {
   const HoverableWrapper({
     super.key,
@@ -22,7 +23,7 @@ class HoverableWrapper extends StatefulWidget {
 class _HoverableWrapperState extends State<HoverableWrapper> {
   bool _isHovered = false;
 
-  /// Helper to determine scale dependin on distance from hovered item
+  /// Helper to determine scale depending on distance from hovered item.
   double _getDistanceScale() {
     if (widget.distance == 0) {
       return 1.2;
@@ -58,7 +59,7 @@ class _HoverableWrapperState extends State<HoverableWrapper> {
   @override
   Widget build(BuildContext context) {
     return MouseRegion(
-      opaque: true,
+      opaque: false,
       hitTestBehavior: HitTestBehavior.translucent,
       onEnter: (_) => _onHover(),
       onExit: (_) => _onHoverEnd(),
